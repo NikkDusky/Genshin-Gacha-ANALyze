@@ -1,2 +1,3 @@
-# Genshin Gacha ANALyze
- Simple simulation of gacha from the Genshin Impact
+![](gachaANALyze.png)
+![](gachaANALyze100k.png)
+![](gachaANALyze100012.png)
