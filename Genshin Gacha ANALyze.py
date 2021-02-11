@@ -90,7 +90,7 @@ def one_pull():
     return pull
 
 
-def ten_pull(): #Функция на 10 пулов
+def ten_pull(): #Функция на 10 пулов.
     tenPullStr = ''
     for n in range(10):
         tenPullStr = tenPullStr + str(one_pull() + "\n   ")
@@ -172,13 +172,13 @@ while True: #Цикл для меню со статистикой и выбор�
         continX = input("  Нажмите любую клавишу, чтобы продолжить...")
         os.system("cls")
         try:
-            roundlegendary = round(((total_legendary / x) * 100), 3) #Расчет реального процента с учетом гаранта и округление
+            roundlegendary = round(((total_legendary / x) * 100), 3) #Расчет реального процента с учетом гаранта и округление.
             chance_on_legendary = str(roundlegendary)
 
-            roundviolet = round(((total_violet / x) * 100), 3) #Расчет реального процента с учетом гаранта и округление
+            roundviolet = round(((total_violet / x) * 100), 3) #Расчет реального процента с учетом гаранта и округление.
             chance_on_violet = str(roundviolet)
 
-            roundblue = round(((total_blue / x) * 100), 3) #Расчет реального процента с учетом гаранта и округление
+            roundblue = round(((total_blue / x) * 100), 3) #Расчет реального процента с учетом гаранта и округление.
             chance_on_blue = str(roundblue)
         except ZeroDivisionError:
             os.system("cls")
