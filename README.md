@@ -16,7 +16,7 @@ Simple gacha simulator from Genshin Impact. All chances are official, but to get
 
 ## Screenshots
 
-![](gachaANALyze.png)
-![](gachaANALyze100k.png)
-![](gachaANALyze100012.png)
-![](gachaANALyzeENG.png)
+![](screenshots/1.png)
+![](screenshots/2.png)
+![](screenshots/3.png)
+![](screenshots/4.png)
