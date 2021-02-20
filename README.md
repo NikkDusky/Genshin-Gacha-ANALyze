@@ -1,8 +1,14 @@
-# Requirements
+# Genshin Gacha ANALyze/Simulator
 
+Gacha simulator/analyzer
+
+## Requirements
+
+```
 Python 3
 windows terminal
 pip install tqdm
+```
 
 ## About
 
