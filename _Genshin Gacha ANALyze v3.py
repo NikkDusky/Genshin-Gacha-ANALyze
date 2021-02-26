@@ -55,10 +55,10 @@ def one_pull(): #one pull func
     global chance_on_violet
     global table_of_drop
 
-    violet_pulls = violet_pulls + 1 #count pulls for guaranteed violet
-    legendary_pulls = legendary_pulls + 1 #count pulls for guaranteed legendary
-    chance_on_legendary = chance_on_legendary + 0.01105 #soft pity% for legendary
-    chance_on_violet = chance_on_violet + 0.2922 #soft pity% for violet
+    violet_pulls += 1 #count pulls for guaranteed violet
+    legendary_pulls += 1 #count pulls for guaranteed legendary
+    chance_on_legendary += 0.01105 #soft pity% for legendary
+    chance_on_violet += 0.2922 #soft pity% for violet
 
     pull = random.choices(['Легендарка', 'Фиол', 'Синька'], weights=[chance_on_legendary, chance_on_violet, chance_on_blue]) #random pull with height 0.6%, 5,1% + soft pity
 
@@ -70,7 +70,7 @@ def one_pull(): #one pull func
 
     if pull == ['Синька']: #if we get blue
 
-        total_blue = total_blue + 1
+        total_blue += 1
         pull = random.choice([
             '(*3) Рогатка', '(*3) Лук ворона', '(*3) Эпос о драконоборцах', '(*3) Чёрная кисть', '(*3) Меч драконьей крови',
             '(*3) Меч небесного всадника', '(*3) Холодное лезвие', '(*3) Клятва стрелка', '(*3) Изумрудный шар', '(*3) Руководство по магии',
@@ -80,7 +80,7 @@ def one_pull(): #one pull func
     elif pull == ['Фиол']: #if we get violet
 
         violet_pulls = 0   #clear numbers for guaranteed violet
-        total_violet = total_violet + 1
+        total_violet += 1
         chance_on_violet = 5.1
 
         hg = hero_or_gun() #50/50 func call
@@ -101,7 +101,7 @@ def one_pull(): #one pull func
     elif pull == ['Легендарка']: #if we get legendary
 
         legendary_pulls = 0 #clear numbers for guaranteed legendary
-        total_legendary = total_legendary + 1
+        total_legendary += 1
         chance_on_legendary = 0.6
 
         hg = hero_or_gun() #50/50 func call
